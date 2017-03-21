@@ -1,16 +1,16 @@
 //
-//  FFlineChartView.m
+//  FFStacklineChart.m
 //  FFChart
 //
 //  Created by wangpengfei on 2014/3/17.
 //  Copyright © 2014年 wangpf. All rights reserved.
 //
 
-#import "FFlineChartView.h"
+#import "FFStacklineChart.h"
 #import "FFBar.h"
 #import "UIColor+ChartColor.h"
 
-@implementation FFlineChartView
+@implementation FFStacklineChart
 
 - (void)stroke {
     

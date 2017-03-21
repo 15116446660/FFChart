@@ -8,14 +8,14 @@
 
 #import "ViewController.h"
 #import "FFChartView.h"
-#import "FFBarChartView.h"
-#import "FFlineChartView.h"
+#import "FFStackBarChart.h"
+#import "FFStacklineChart.h"
 #import "UIColor+ChartColor.h"
 
 @interface ViewController () <FFChartDataSource>
 
-@property (nonatomic, strong) FFBarChartView *barChart;
-@property (nonatomic, strong) FFlineChartView *lineChart;
+@property (nonatomic, strong) FFStackBarChart *barChart;
+@property (nonatomic, strong) FFStacklineChart *lineChart;
 
 @end
 
@@ -26,13 +26,13 @@
     
     self.view.backgroundColor = [UIColor WhiteSmoke];
     
-    self.barChart = [FFBarChartView chartWithFrame:CGRectMake(10.f, 50.f, self.view.frame.size.width - 20.f, 180.f)];
+    self.barChart = [FFStackBarChart chartWithFrame:CGRectMake(10.f, 50.f, self.view.frame.size.width - 20.f, 180.f)];
     self.barChart.compact = NO;
     self.barChart.dataSource = self;
     [self.barChart stroke];
     [self.view addSubview:self.barChart];
     
-    self.lineChart = [FFlineChartView chartWithFrame:CGRectMake(10.f, 280.f, self.view.frame.size.width - 20.f, 180.f)];
+    self.lineChart = [FFStacklineChart chartWithFrame:CGRectMake(10.f, 280.f, self.view.frame.size.width - 20.f, 180.f)];
     self.lineChart.showBar = YES;
     self.lineChart.x_w = 25.f;
     self.lineChart.x_spacing = 2.f;

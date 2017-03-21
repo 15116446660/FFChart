@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0F24DD7A1E80C08300C0B503 /* FFBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F24DD731E80C08300C0B503 /* FFBar.m */; };
-		0F24DD7B1E80C08300C0B503 /* FFBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F24DD751E80C08300C0B503 /* FFBarChartView.m */; };
+		0F24DD7B1E80C08300C0B503 /* FFStackBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F24DD751E80C08300C0B503 /* FFStackBarChart.m */; };
 		0F24DD7C1E80C08300C0B503 /* FFChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F24DD771E80C08300C0B503 /* FFChartView.m */; };
-		0F24DD7D1E80C08300C0B503 /* FFlineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F24DD791E80C08300C0B503 /* FFlineChartView.m */; };
+		0F24DD7D1E80C08300C0B503 /* FFStacklineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F24DD791E80C08300C0B503 /* FFStacklineChart.m */; };
 		0F3BC52E1E777797006DBA9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3BC52D1E777797006DBA9B /* main.m */; };
 		0F3BC5311E777797006DBA9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3BC5301E777797006DBA9B /* AppDelegate.m */; };
 		0F3BC5341E777797006DBA9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3BC5331E777797006DBA9B /* ViewController.m */; };
@@ -24,12 +24,12 @@
 /* Begin PBXFileReference section */
 		0F24DD721E80C08300C0B503 /* FFBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFBar.h; sourceTree = "<group>"; };
 		0F24DD731E80C08300C0B503 /* FFBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFBar.m; sourceTree = "<group>"; };
-		0F24DD741E80C08300C0B503 /* FFBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFBarChartView.h; sourceTree = "<group>"; };
-		0F24DD751E80C08300C0B503 /* FFBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFBarChartView.m; sourceTree = "<group>"; };
+		0F24DD741E80C08300C0B503 /* FFStackBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFStackBarChart.h; sourceTree = "<group>"; };
+		0F24DD751E80C08300C0B503 /* FFStackBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFStackBarChart.m; sourceTree = "<group>"; };
 		0F24DD761E80C08300C0B503 /* FFChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFChartView.h; sourceTree = "<group>"; };
 		0F24DD771E80C08300C0B503 /* FFChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFChartView.m; sourceTree = "<group>"; };
-		0F24DD781E80C08300C0B503 /* FFlineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFlineChartView.h; sourceTree = "<group>"; };
-		0F24DD791E80C08300C0B503 /* FFlineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFlineChartView.m; sourceTree = "<group>"; };
+		0F24DD781E80C08300C0B503 /* FFStacklineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFStacklineChart.h; sourceTree = "<group>"; };
+		0F24DD791E80C08300C0B503 /* FFStacklineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFStacklineChart.m; sourceTree = "<group>"; };
 		0F3BC5291E777797006DBA9B /* FFChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3BC52D1E777797006DBA9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F3BC52F1E777797006DBA9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,12 +103,12 @@
 			children = (
 				0F24DD721E80C08300C0B503 /* FFBar.h */,
 				0F24DD731E80C08300C0B503 /* FFBar.m */,
-				0F24DD741E80C08300C0B503 /* FFBarChartView.h */,
-				0F24DD751E80C08300C0B503 /* FFBarChartView.m */,
+				0F24DD741E80C08300C0B503 /* FFStackBarChart.h */,
+				0F24DD751E80C08300C0B503 /* FFStackBarChart.m */,
 				0F24DD761E80C08300C0B503 /* FFChartView.h */,
 				0F24DD771E80C08300C0B503 /* FFChartView.m */,
-				0F24DD781E80C08300C0B503 /* FFlineChartView.h */,
-				0F24DD791E80C08300C0B503 /* FFlineChartView.m */,
+				0F24DD781E80C08300C0B503 /* FFStacklineChart.h */,
+				0F24DD791E80C08300C0B503 /* FFStacklineChart.m */,
 				0F3BC5511E791ACE006DBA9B /* Tools */,
 			);
 			path = FFChart;
@@ -201,9 +201,9 @@
 				0F24DD7C1E80C08300C0B503 /* FFChartView.m in Sources */,
 				0F3BC5341E777797006DBA9B /* ViewController.m in Sources */,
 				0F3BC5541E791AF3006DBA9B /* NSString+PureNumber.m in Sources */,
-				0F24DD7D1E80C08300C0B503 /* FFlineChartView.m in Sources */,
+				0F24DD7D1E80C08300C0B503 /* FFStacklineChart.m in Sources */,
 				0F24DD7A1E80C08300C0B503 /* FFBar.m in Sources */,
-				0F24DD7B1E80C08300C0B503 /* FFBarChartView.m in Sources */,
+				0F24DD7B1E80C08300C0B503 /* FFStackBarChart.m in Sources */,
 				0F3BC5311E777797006DBA9B /* AppDelegate.m in Sources */,
 				0F3BC52E1E777797006DBA9B /* main.m in Sources */,
 			);

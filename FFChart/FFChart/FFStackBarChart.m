@@ -1,15 +1,15 @@
 //
-//  FFBarChartView.m
+//  FFStackBarChart.m
 //  FFChart
 //
 //  Created by wangpengfei on 2014/3/15.
 //  Copyright © 2014年 wangpf. All rights reserved.
 //
 
-#import "FFBarChartView.h"
+#import "FFStackBarChart.h"
 #import "FFBar.h"
 
-@implementation FFBarChartView
+@implementation FFStackBarChart
 
 - (void)stroke {
     

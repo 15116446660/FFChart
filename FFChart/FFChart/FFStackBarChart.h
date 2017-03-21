@@ -1,5 +1,5 @@
 //
-//  FFBarChartView.h
+//  FFStackBarChart.h
 //  FFChart
 //
 //  Created by wangpengfei on 2014/3/15.
@@ -8,7 +8,9 @@
 
 #import "FFChartView.h"
 
-@interface FFBarChartView : FFChartView
+@class FFStackBarChart;
+
+@interface FFStackBarChart : FFChartView
 
 - (void)stroke;
 

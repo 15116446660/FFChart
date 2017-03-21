@@ -1,5 +1,5 @@
 //
-//  FFlineChartView.h
+//  FFStacklineChart.h
 //  FFChart
 //
 //  Created by wangpengfei on 2014/3/17.
@@ -8,7 +8,9 @@
 
 #import "FFChartView.h"
 
-@interface FFlineChartView : FFChartView
+@class FFlineChartView;
+
+@interface FFStacklineChart : FFChartView
 
 @property (nonatomic, assign) BOOL showBar; //default YES
 
