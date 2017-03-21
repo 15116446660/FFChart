@@ -2,8 +2,8 @@
 //  UIColor+ChartColor.h
 //  FFChart
 //
-//  Created by wangpengfei on 2017/3/16.
-//  Copyright © 2017年 wangpf. All rights reserved.
+//  Created by wangpengfei on 2014/3/16.
+//  Copyright © 2014年 wangpf. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

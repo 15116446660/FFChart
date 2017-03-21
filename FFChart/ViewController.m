@@ -2,8 +2,8 @@
 //  ViewController.m
 //  FFChart
 //
-//  Created by wangpengfei on 2017/3/14.
-//  Copyright © 2017年 wangpf. All rights reserved.
+//  Created by wangpengfei on 2014/3/14.
+//  Copyright © 2014年 wangpf. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -23,6 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor WhiteSmoke];
     
     self.barChart = [FFBarChartView chartWithFrame:CGRectMake(10.f, 50.f, self.view.frame.size.width - 20.f, 180.f)];
     self.barChart.compact = NO;
