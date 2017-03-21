@@ -9,6 +9,8 @@ Usage
 -----
 Copy the FFChart folder to your project
 
+```Objective-C
+
     #import "FFStackBarChart.h"
     #import "FFStacklineChart.h"
 
@@ -31,3 +33,4 @@ Copy the FFChart folder to your project
     self.lineChart.dataSource = self;
     [self.lineChart stroke];
     [self.view addSubview:self.lineChart];
+```
