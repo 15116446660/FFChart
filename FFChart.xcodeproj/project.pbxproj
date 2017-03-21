@@ -13,6 +13,12 @@
 		0F3BC5371E777797006DBA9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3BC5351E777797006DBA9B /* Main.storyboard */; };
 		0F3BC5391E777797006DBA9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F3BC5381E777797006DBA9B /* Assets.xcassets */; };
 		0F3BC53C1E777797006DBA9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3BC53A1E777797006DBA9B /* LaunchScreen.storyboard */; };
+		0F3BC5491E77781D006DBA9B /* FFChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3BC5481E77781D006DBA9B /* FFChartView.m */; };
+		0F3BC54C1E78D7B7006DBA9B /* FFBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3BC54B1E78D7B7006DBA9B /* FFBarChartView.m */; };
+		0F3BC5541E791AF3006DBA9B /* NSString+PureNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3BC5531E791AF3006DBA9B /* NSString+PureNumber.m */; };
+		0F3BC5571E7A39D7006DBA9B /* FFBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3BC5561E7A39D7006DBA9B /* FFBar.m */; };
+		0F3E93D21E7AAD91009572AB /* UIColor+ChartColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E93D11E7AAD91009572AB /* UIColor+ChartColor.m */; };
+		0F6518241E7BBE9200640C3B /* FFlineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6518231E7BBE9200640C3B /* FFlineChartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,18 @@
 		0F3BC5381E777797006DBA9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F3BC53B1E777797006DBA9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F3BC53D1E777797006DBA9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F3BC5471E77781D006DBA9B /* FFChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFChartView.h; sourceTree = "<group>"; };
+		0F3BC5481E77781D006DBA9B /* FFChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFChartView.m; sourceTree = "<group>"; };
+		0F3BC54A1E78D7B7006DBA9B /* FFBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFBarChartView.h; sourceTree = "<group>"; };
+		0F3BC54B1E78D7B7006DBA9B /* FFBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFBarChartView.m; sourceTree = "<group>"; };
+		0F3BC5521E791AF3006DBA9B /* NSString+PureNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PureNumber.h"; sourceTree = "<group>"; };
+		0F3BC5531E791AF3006DBA9B /* NSString+PureNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PureNumber.m"; sourceTree = "<group>"; };
+		0F3BC5551E7A39D7006DBA9B /* FFBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFBar.h; sourceTree = "<group>"; };
+		0F3BC5561E7A39D7006DBA9B /* FFBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFBar.m; sourceTree = "<group>"; };
+		0F3E93D01E7AAD91009572AB /* UIColor+ChartColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ChartColor.h"; sourceTree = "<group>"; };
+		0F3E93D11E7AAD91009572AB /* UIColor+ChartColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ChartColor.m"; sourceTree = "<group>"; };
+		0F6518221E7BBE9200640C3B /* FFlineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFlineChartView.h; sourceTree = "<group>"; };
+		0F6518231E7BBE9200640C3B /* FFlineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFlineChartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 		0F3BC52B1E777797006DBA9B /* FFChart */ = {
 			isa = PBXGroup;
 			children = (
+				0F3BC5431E7777F0006DBA9B /* FFChart */,
 				0F3BC52F1E777797006DBA9B /* AppDelegate.h */,
 				0F3BC5301E777797006DBA9B /* AppDelegate.m */,
 				0F3BC5321E777797006DBA9B /* ViewController.h */,
@@ -77,6 +96,57 @@
 				0F3BC52D1E777797006DBA9B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F3BC5431E7777F0006DBA9B /* FFChart */ = {
+			isa = PBXGroup;
+			children = (
+				0F3BC5511E791ACE006DBA9B /* Tools */,
+				0F3BC5441E7777F0006DBA9B /* Controller */,
+				0F3BC5451E7777F0006DBA9B /* Model */,
+				0F3BC5461E7777F0006DBA9B /* View */,
+			);
+			path = FFChart;
+			sourceTree = "<group>";
+		};
+		0F3BC5441E7777F0006DBA9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0F3BC5451E7777F0006DBA9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F3BC5461E7777F0006DBA9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F3BC5471E77781D006DBA9B /* FFChartView.h */,
+				0F3BC5481E77781D006DBA9B /* FFChartView.m */,
+				0F3BC54A1E78D7B7006DBA9B /* FFBarChartView.h */,
+				0F3BC54B1E78D7B7006DBA9B /* FFBarChartView.m */,
+				0F6518221E7BBE9200640C3B /* FFlineChartView.h */,
+				0F6518231E7BBE9200640C3B /* FFlineChartView.m */,
+				0F3BC5551E7A39D7006DBA9B /* FFBar.h */,
+				0F3BC5561E7A39D7006DBA9B /* FFBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0F3BC5511E791ACE006DBA9B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0F3BC5521E791AF3006DBA9B /* NSString+PureNumber.h */,
+				0F3BC5531E791AF3006DBA9B /* NSString+PureNumber.m */,
+				0F3E93D01E7AAD91009572AB /* UIColor+ChartColor.h */,
+				0F3E93D11E7AAD91009572AB /* UIColor+ChartColor.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +180,7 @@
 				TargetAttributes = {
 					0F3BC5281E777797006DBA9B = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = U7TCE79EZN;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,8 +221,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F3E93D21E7AAD91009572AB /* UIColor+ChartColor.m in Sources */,
 				0F3BC5341E777797006DBA9B /* ViewController.m in Sources */,
+				0F3BC5491E77781D006DBA9B /* FFChartView.m in Sources */,
+				0F3BC5541E791AF3006DBA9B /* NSString+PureNumber.m in Sources */,
+				0F6518241E7BBE9200640C3B /* FFlineChartView.m in Sources */,
 				0F3BC5311E777797006DBA9B /* AppDelegate.m in Sources */,
+				0F3BC54C1E78D7B7006DBA9B /* FFBarChartView.m in Sources */,
+				0F3BC5571E7A39D7006DBA9B /* FFBar.m in Sources */,
 				0F3BC52E1E777797006DBA9B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U7TCE79EZN;
 				INFOPLIST_FILE = FFChart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangpf.FFChart;
@@ -281,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U7TCE79EZN;
 				INFOPLIST_FILE = FFChart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangpf.FFChart;
@@ -307,6 +386,7 @@
 				0F3BC5421E777797006DBA9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
