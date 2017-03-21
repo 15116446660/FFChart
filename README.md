@@ -7,17 +7,19 @@ A simple stack bar chart and stack line chart for iOS
 
 Usage
 -----
-Copy the PNChart folder to your project
+Copy the FFChart folder to your project
 
     #import "FFStackBarChart.h"
     #import "FFStacklineChart.h"
 
+    //For stack bar chart
     self.barChart = [FFStackBarChart chartWithFrame:CGRectMake(10.f, 50.f, self.view.frame.size.width - 20.f, 180.f)];
     self.barChart.compact = NO;
     self.barChart.dataSource = self;
     [self.barChart stroke];
     [self.view addSubview:self.barChart];
     
+    //For stack line chart
     self.lineChart = [FFStacklineChart chartWithFrame:CGRectMake(10.f, 280.f, self.view.frame.size.width - 20.f, 180.f)];
     self.lineChart.showBar = YES;
     self.lineChart.x_w = 25.f;
