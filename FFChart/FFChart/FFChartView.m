@@ -295,7 +295,7 @@ int get_first_num (int x) {
     UIBezierPath *path = [[UIBezierPath alloc] init];
     [path moveToPoint:CGPointMake(self.origin.x, SELF_H - self.origin.y)];
     [path addLineToPoint:CGPointMake(self.origin.x, CGRectGetMinY(self.scrollView.frame))];
-     
+    
     //create shape layer
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     shapeLayer.strokeColor = self.axisColor.CGColor;
@@ -314,11 +314,11 @@ int get_first_num (int x) {
     for (int i = 0; i < 6; i++) {
         NSString *valueStr;
         
-        if ([self isKindOfClass:[NSClassFromString(@"FFBarChartView") class]]) {
+        if ([self isKindOfClass:[NSClassFromString(@"FFStackBarChart") class]]) {
             
             valueStr = [NSString stringWithFormat:@"%.0f",self.totalMax*(i/5.0f)];
             
-        } else if ([self isKindOfClass:[NSClassFromString(@"FFlineChartView") class]]) {
+        } else if ([self isKindOfClass:[NSClassFromString(@"FFStacklineChart") class]]) {
             valueStr = [NSString stringWithFormat:@"%.0f",self.upper_limit*(i/5.0f)];
         }
         
@@ -401,8 +401,8 @@ int get_first_num (int x) {
     
     //紧凑显示
     //预设单元宽度(x_w)和间距（x_spacing）累计小于 scrollview 宽度，使缺省单元宽度失效，重新计算单元宽度，并且不能太宽
-//    self.compact = YES;
-    if ([self isKindOfClass:[NSClassFromString(@"FFBarChartView") class]]) {
+    //    self.compact = YES;
+    if ([self isKindOfClass:[NSClassFromString(@"FFStackBarChart") class]]) {
         if (self.compact) {
             
             //1、先尝试使spacing = width
@@ -432,18 +432,22 @@ int get_first_num (int x) {
                     self.x_w = 15.f;
                     self.x_spacing = (totalWidth-self.values.count*self.x_w)/(self.values.count*2);
                 }
+            } else {
+                self.x_spacing = self.x_w;
             }
         }
-    } else if ([self isKindOfClass:[NSClassFromString(@"FFlineChartView") class]]) {
+    } else if ([self isKindOfClass:[NSClassFromString(@"FFStacklineChart") class]]) {
         
         CGFloat totalWidth = self.values.count*self.x_w + 2*self.values.count*self.x_spacing;
         
         if (totalWidth < self.scrollView.frame.size.width) {
             self.x_w = self.scrollView.frame.size.width/self.values.count - 2*self.x_spacing;
+            self.x_spacing = (self.scrollView.frame.size.width-self.values.count*self.x_w)/(self.values.count*2);
         }
         
         if (self.compact == YES && totalWidth > self.scrollView.frame.size.width) {
             self.x_w = self.scrollView.frame.size.width/self.values.count - 2*self.x_spacing;
+            self.x_spacing = (self.scrollView.frame.size.width-self.values.count*self.x_w)/(self.values.count*2);
         }
     }
     
